@@ -101,4 +101,9 @@ alldelete.addEventListener("click", () => {
 function temiz_sayfa() {
   const mainsayfa = document.getElementById("products-preview");
   mainsayfa.innerHTML += `<div class="NoProduct"><p>No Product</p></div>`;
+  const totaldefoult=document.querySelector(".main__sum-price");
+  totaldefoult.innerText=0;
+  document.getElementById("tax").innerText=0;
+  document.querySelector(".shipping").innerText=0;
+  document.getElementById("total").innerText =0;
 }
