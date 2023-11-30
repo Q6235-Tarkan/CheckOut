@@ -1,7 +1,3 @@
-// Ürün satırındaki artı düğmesine tıkladığımda, ürün miktarını artırabiliyorum.
-// Ürün satırındaki eksi düğmesine tıkladığımda, ürün miktarını azaltabiliyorum, ancak minimum miktar değeri 1 olmalı.
-// Ürün satırındaki kaldır düğmesine tıkladığımda veya miktarı 0'a düşürdüğümde, sepetimden bir ürünü silebiliyorum.
-// Herhangi bir ürünün kombinasyonunu değiştirdiğimde (artı, eksi, kaldır vb.), ilgili alanlarda yeni fiyat hesaplamasını görmek istiyorum.
 
 guncelle();
 const main_product = document.querySelector(".main__product-painel");
@@ -106,4 +102,5 @@ function temiz_sayfa() {
   document.getElementById("tax").innerText=0;
   document.querySelector(".shipping").innerText=0;
   document.getElementById("total").innerText =0;
+  document.querySelector(".nav__list--btn").remove();
 }
